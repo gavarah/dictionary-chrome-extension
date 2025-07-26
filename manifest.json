@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Word Meaning Tooltip",
+  "version": "1.0",
+  "description": "Displays definition and usage of selected words in a tooltip.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
